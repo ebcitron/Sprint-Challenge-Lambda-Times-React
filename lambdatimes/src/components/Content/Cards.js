@@ -16,14 +16,16 @@ const Cards = props => {
 }
 
 Cards.propTypes = {
-  cards: PropTypes.arrayOf(
-    PropTypes.obj({
+  
+    cards: PropTypes.arrayOf(
+      PropTypes.shape({
         headline: PropTypes.string,
         tab: PropTypes.string,
         img: PropTypes.string,
         author: PropTypes.string
       })
-  )};
+    )
+};
 
 // Make sure you include prop types for all of your incoming props
 
