@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 
 
-const styledHeader = styled.div`
+const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,12 +39,12 @@ span {
 }
 
 `;
-const styledDate = styled.span`
+const StyledDate = styled.span`
   margin-left: 25px;
   flex: 1;
 
 `;
-const styledTemp = styled.span`
+const StyledTemp = styled.span`
   text-align: right;
   margin-right: 25px;
   flex: 1;
@@ -53,11 +53,11 @@ const styledTemp = styled.span`
 
 const Header = () => {
   return (
-    <styledHeader>
-      <styledDate>SMARCH 32, 2018</styledDate>
+    <StyledHeader>
+      <StyledDate>SMARCH 32, 2018</StyledDate>
       <h1>Lambda Times</h1>
-      <styledTemp>98°</styledTemp>
-    </styledHeader>
+      <StyledTemp>98°</StyledTemp>
+    </StyledHeader>
   );
 }
 

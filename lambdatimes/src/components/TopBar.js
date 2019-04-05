@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-// Refactor this component to use styled components and not classNames. 
+
+// Refactor this component to use Styled components and not classNames. 
 // You can find the corresponding CSS in the CSS/index.css file
-const styledTopBar = styled.div`
+const StyledTopBar = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -13,7 +14,7 @@ const styledTopBar = styled.div`
   background-color: #333;
   `;
 
-const styledContainer = styled.div`
+const StyledContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: none;
@@ -27,7 +28,7 @@ const styledContainer = styled.div`
   width:1280px;
 }
 `;
-const styledContainerL = styled.div`
+const StyledContainerL = styled.div`
   display: flex;
   justify-content: none;
   align-items: center;
@@ -42,7 +43,7 @@ span {
 }
 `;
 
-const styledContainerC = styled.div`
+const StyledContainerC = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +64,7 @@ span:hover {
 
 `;
 
-const styledContainerR = styled.div`
+const StyledContainerR = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -79,19 +80,19 @@ span {
 
 const TopBar = () => {
   return (
-    <styledTopBar>
-      <styledContainer>
-        <styledContainerL>          
+    <StyledTopBar>
+      <StyledContainer>
+        <StyledContainerL>
           <span>TOPICS</span><span>SEARCH</span>
-        </styledContainerL>
-        <styledContainerC>
-        <span>GENERAL</span><span>BROWNBAG</span><span>RANDOM</span><span>MUSIC</span><span>ANNOUNCEMENTS</span>
-        </styledContainerC>
-        <styledContainerR>
+        </StyledContainerL>
+        <StyledContainerC>
+          <span>GENERAL</span><span>BROWNBAG</span><span>RANDOM</span><span>MUSIC</span><span>ANNOUNCEMENTS</span>
+        </StyledContainerC>
+        <StyledContainerR>
           <span>LOG IN</span>
-        </styledContainerR>
-      </styledContainer>
-    </styledTopBar>
+        </StyledContainerR>
+      </StyledContainer>
+    </StyledTopBar>
   );
 };
 
